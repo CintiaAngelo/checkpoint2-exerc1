@@ -1,0 +1,13 @@
+<h2>Verificação de Idade</h2>
+<p>Idade atual: {{ idade }}</p>
+
+<button (click)="diminuir()">-</button>
+<button (click)="aumentar()">+</button>
+
+<div>
+  @if (idade >= 18) {
+    <p style="color: green;">Acesso permitido ✅</p>
+  } @else {
+    <p style="color: red;">Acesso negado ❌</p>
+  }
+</div>

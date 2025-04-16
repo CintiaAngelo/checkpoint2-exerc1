@@ -1,0 +1,73 @@
+<h2>Informe o número do mês (1 a 12):</h2>
+<input type="number" [(ngModel)]="numeroMes" min="1" max="12" />
+
+<div>
+  @switch (numeroMes) {
+    @case (1) {
+      <div>
+        <p>Janeiro</p>
+      </div>
+    }
+    @case (2) {
+      <div>
+        <p>Fevereiro</p>
+      </div>
+    }
+    @case (3) {
+      <div>
+        <p>Março</p>
+      </div>
+    }
+    @case (4) {
+      <div>
+        <p>Abril</p>
+      </div>
+    }
+    @case (5) {
+      <div>
+        <p>Maio</p>
+      </div>
+    }
+    @case (6) {
+      <div>
+        <p>Junho</p>
+      </div>
+    }
+    @case (7) {
+      <div>
+        <p>Julho</p>
+      </div>
+    }
+    @case (8) {
+      <div>
+        <p>Agosto</p>
+      </div>
+    }
+    @case (9) {
+      <div>
+        <p>Setembro</p>
+      </div>
+    }
+    @case (10) {
+      <div>
+        <p>Outubro</p>
+      </div>
+    }
+    @case (11) {
+      <div>
+        <p>Novembro</p>
+      </div>
+    }
+    @case (12) {
+      <div>
+        <p>Dezembro</p>
+      </div>
+    }
+    @default {
+      <div>
+        <p>Mês Inválido</p>
+      </div>
+    }
+  }
+</div>
+

@@ -1,0 +1,12 @@
+<h2>Lista de Tarefas</h2>
+
+<ul>
+  @for (tarefa of tarefas; track tarefa; let i = $index) {
+    <li>
+      {{ tarefa }}
+      <button (click)="removerTarefa(i)">Remover</button>
+    </li>
+  } @empty {
+    <li><em>Nenhuma tarefa pendente</em></li>
+  }
+</ul>

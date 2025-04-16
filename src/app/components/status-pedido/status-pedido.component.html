@@ -1,0 +1,23 @@
+<h2>Verificação de Status de Pedido</h2>
+<select [(ngModel)]="status">
+    <option value="">Selecione</option>
+    <option value="pendente">Pendente</option>
+    <option value="enviado">Enviado</option>
+    <option value="entregue">Entregue</option>
+  </select>
+  
+  <div> @switch(status){
+    @case("pendente") {
+      <p>Aguardando confirmação</p>
+    }
+    @case("enviado") {
+      <p>Pedido a caminho</p>
+    }
+    @case("entregue") {
+      <p>Pedido entregue</p>
+    }
+    @default {
+      <p>Status desconhecido</p>
+    }}
+  </div>
+  
